@@ -1,0 +1,27 @@
+{
+	"name": "voonne/controls",
+	"type": "library",
+	"description": "Voonne common controls",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Jan Lavička",
+			"email": "mail@janlavicka.name",
+			"homepage": "http://www.janlavicka.name"
+		}
+	],
+	"support": {
+		"email": "mail@janlavicka.name",
+		"issues": "https://github.com/voonne/controls/issues"
+	},
+	"require": {
+		"kdyby/autowired": "@dev",
+		"nette/application": "~2.4",
+		"nette/component-model": "~2.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Voonne\\Controls\\": "src/"
+		}
+	}
+}
