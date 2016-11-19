@@ -60,10 +60,11 @@ abstract class Control extends \Nette\Application\UI\Control
 		$parts = explode('.', $code);
 
 		if (count($parts) == 2) {
-			$args['groupName'] = $parts[0];
-			$args['pageName'] = $parts[1];
+			$arguments = is_array($destination) ? $destination : [];
+			$arguments['groupName'] = $parts[0];
+			$arguments['pageName'] = $parts[1];
 
-			$this->getPresenter()->redirect('Content:default', $args);
+			$this->getPresenter()->redirect('Content:default', $arguments);
 		} elseif ($code == 'this') {
 			parent::redirect('this');
 		} else {
