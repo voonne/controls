@@ -7,7 +7,7 @@
 		{
 			"name": "Jan Lavička",
 			"email": "mail@janlavicka.name",
-			"homepage": "http://www.janlavicka.name"
+			"homepage": "https://www.janlavicka.name"
 		}
 	],
 	"support": {
@@ -16,8 +16,8 @@
 	},
 	"require": {
 		"kdyby/autowired": "@dev",
-		"nette/application": "~2.4",
-		"nette/component-model": "~2.3"
+		"nette/application": "^2.4",
+		"nette/component-model": "^2.3"
 	},
 	"autoload": {
 		"psr-4": {
